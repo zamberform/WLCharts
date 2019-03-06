@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WLCharts_Example' do
+  pod 'WLCharts', :path => '../'
+
+  target 'WLCharts_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
