@@ -1,6 +1,6 @@
 # WLCharts
 
-![Sample](https://github.com/zamberform/WLCharts/screen/WLCharts.gif)
+![Sample](https://github.com/zamberform/wiki/WLCharts/screen/WLCharts.gif)
 
 [![CI Status](https://img.shields.io/travis/brightzamber/WLCharts.svg?style=flat)](https://travis-ci.org/brightzamber/WLCharts)
 [![Version](https://img.shields.io/cocoapods/v/WLCharts.svg?style=flat)](https://cocoapods.org/pods/WLCharts)
