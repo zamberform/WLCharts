@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		02056AB28CDF344BE0956DE1 /* Pods_WLCharts_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A1417918B4F5790748D292 /* Pods_WLCharts_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		6801A9B63638325C642D8CD8 /* Pods_WLCharts_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC85D482091834CDDA23C5F7 /* Pods_WLCharts_Example.framework */; };
+		727BC5832237DC1C0017677A /* CircleChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BC57D2237DC1C0017677A /* CircleChartViewController.swift */; };
+		727BC5842237DC1C0017677A /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BC57E2237DC1C0017677A /* TableViewController.swift */; };
+		727BC5852237DC1C0017677A /* RadarChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BC57F2237DC1C0017677A /* RadarChartViewController.swift */; };
+		727BC5862237DC1C0017677A /* ScatterChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BC5802237DC1C0017677A /* ScatterChartViewController.swift */; };
+		727BC5872237DC1C0017677A /* LineChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BC5812237DC1C0017677A /* LineChartViewController.swift */; };
+		727BC5882237DC1C0017677A /* PieChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727BC5822237DC1C0017677A /* PieChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,13 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1E14C6BDEBF3F2C287E913A1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1E14C6BDEBF3F2C287E913A1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		2009112BE8A356B0C6BF1DA0 /* Pods-WLCharts_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLCharts_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLCharts_Example/Pods-WLCharts_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		30752BE0C786F0F895BD149B /* Pods-WLCharts_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLCharts_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLCharts_Example/Pods-WLCharts_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* WLCharts_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WLCharts_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -42,10 +46,16 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		71A1417918B4F5790748D292 /* Pods_WLCharts_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLCharts_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6A902AD091DBF7D3DD342D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		727BC57D2237DC1C0017677A /* CircleChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleChartViewController.swift; sourceTree = "<group>"; };
+		727BC57E2237DC1C0017677A /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		727BC57F2237DC1C0017677A /* RadarChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadarChartViewController.swift; sourceTree = "<group>"; };
+		727BC5802237DC1C0017677A /* ScatterChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScatterChartViewController.swift; sourceTree = "<group>"; };
+		727BC5812237DC1C0017677A /* LineChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartViewController.swift; sourceTree = "<group>"; };
+		727BC5822237DC1C0017677A /* PieChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PieChartViewController.swift; sourceTree = "<group>"; };
+		B6A902AD091DBF7D3DD342D0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		DC85D482091834CDDA23C5F7 /* Pods_WLCharts_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLCharts_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE25BB6ECEF76BC4CC7B8EB4 /* Pods-WLCharts_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLCharts_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WLCharts_Tests/Pods-WLCharts_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		E2EAC133BA3F820FD77EFD48 /* WLCharts.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WLCharts.podspec; path = ../WLCharts.podspec; sourceTree = "<group>"; };
+		E2EAC133BA3F820FD77EFD48 /* WLCharts.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WLCharts.podspec; path = ../WLCharts.podspec; sourceTree = "<group>"; };
 		EF9181BA76CEE4214D364A76 /* Pods-WLCharts_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WLCharts_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WLCharts_Tests/Pods-WLCharts_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,8 +123,13 @@
 		607FACD21AFB9204008FA782 /* Example for WLCharts */ = {
 			isa = PBXGroup;
 			children = (
+				727BC57D2237DC1C0017677A /* CircleChartViewController.swift */,
+				727BC5812237DC1C0017677A /* LineChartViewController.swift */,
+				727BC5822237DC1C0017677A /* PieChartViewController.swift */,
+				727BC57F2237DC1C0017677A /* RadarChartViewController.swift */,
+				727BC5802237DC1C0017677A /* ScatterChartViewController.swift */,
+				727BC57E2237DC1C0017677A /* TableViewController.swift */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -212,10 +227,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Z9E7KAWJ2F;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Z9E7KAWJ2F;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -322,8 +339,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				727BC5852237DC1C0017677A /* RadarChartViewController.swift in Sources */,
+				727BC5872237DC1C0017677A /* LineChartViewController.swift in Sources */,
+				727BC5862237DC1C0017677A /* ScatterChartViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				727BC5842237DC1C0017677A /* TableViewController.swift in Sources */,
+				727BC5882237DC1C0017677A /* PieChartViewController.swift in Sources */,
+				727BC5832237DC1C0017677A /* CircleChartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +491,7 @@
 			baseConfigurationReference = 2009112BE8A356B0C6BF1DA0 /* Pods-WLCharts_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z9E7KAWJ2F;
 				INFOPLIST_FILE = WLCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -484,6 +507,7 @@
 			baseConfigurationReference = 30752BE0C786F0F895BD149B /* Pods-WLCharts_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z9E7KAWJ2F;
 				INFOPLIST_FILE = WLCharts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -498,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = EF9181BA76CEE4214D364A76 /* Pods-WLCharts_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Z9E7KAWJ2F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -520,6 +545,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE25BB6ECEF76BC4CC7B8EB4 /* Pods-WLCharts_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = Z9E7KAWJ2F;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

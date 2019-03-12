@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		048BC06F82B046F41162B7AF9EA634C1 /* WLScatterValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8172D604CB0824935A9FA6482C76B913 /* WLScatterValue.swift */; };
+		0B85ACC4903CBAD6A0E962317045E258 /* WLLineDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5532D3F798EB717E6C2CCB6F756B6589 /* WLLineDot.swift */; };
+		0BD415C2678FC8594E11A68223C5207B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		10D8C3FC83EB1F76D6A37460D7E93C10 /* WLRadarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDA37D2597BF6336C4045B4E81BD9AD /* WLRadarChart.swift */; };
+		16F4660DC94E51D1B84B34CF71472CC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		17EE9A48EE8608B1B6A33D82D83693F3 /* WLRadarValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44344C6F8CDDCC8BD2E350163FAFC6CB /* WLRadarValue.swift */; };
+		191E16D25B8D591523A44FAEC363945F /* WLLineX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466426F85F7AF8C3DD4005F8F5F76E8D /* WLLineX.swift */; };
+		262413C9B9E41B5E6203FB88C102251F /* WLCharts-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 437848597E14DF098EE4B8522DB01765 /* WLCharts-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BF28C39CB58033B393BC80B7C0EA9F5 /* WLLineDots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E27F8DAEF783FECB83424590D6113FA /* WLLineDots.swift */; };
+		30F45AA119AB8CFAF0559C3C7203ABEC /* WLScatterAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62AE9C3FF69C55D349F0152A0B246CA7 /* WLScatterAxis.swift */; };
+		34A90F864F468A0D7A3AD39B893899C0 /* WLScatterFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E8D7C7392894601973E1CA45EB77C2 /* WLScatterFont.swift */; };
+		37DAC036A7F275F87A7149DC1FB0F490 /* WLLineGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3F4CEEE47063431D5C78A24403AA9E9 /* WLLineGrid.swift */; };
+		425ED11A7144B8A495B80372A60E0600 /* WLLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D24F5BD997D87DEF5E7E7E95733C75 /* WLLineAnimation.swift */; };
+		4DEB8EE0AFF1F0EE123D3C528AA05F53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		5F7422380D6E520F0641C3BE44B24009 /* WLLineColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3CBE35BFFABD26495671F856FB39BF /* WLLineColorHelper.swift */; };
+		6745062F0746ABEB24ECFA96AD245FEE /* Pods-WLCharts_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C117787AD0CD4FAF506AEC89E71D9CAD /* Pods-WLCharts_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6886A00D4D88E1855AB927A92DC1D38B /* WLScatterChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08368A33145C603CEAE950661451023F /* WLScatterChart.swift */; };
+		6AC046D16E5EC33076CBF33A0FC119AC /* WLCircularChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 027A6B635B02D89A90C611276C3FABDF /* WLCircularChart.swift */; };
+		74E18EE92C55FECDF1076495985BF0B4 /* WLRadarColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2258ABC99FA399054231A95BB7CD5D6E /* WLRadarColor.swift */; };
+		86BAA3A2415E1CBEEE13B3616B372405 /* WLLineY.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC679788109281C4292CB88538E04CE /* WLLineY.swift */; };
+		8872C8B1569796C9365B78D08CD37E29 /* WLCharts-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE49899E381F1473AC91935F028CF6D /* WLCharts-dummy.m */; };
+		9A213DB7FF06678572FD08E12175F3E7 /* Pods-WLCharts_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 63562B3A2400ABE943002615009F4E00 /* Pods-WLCharts_Tests-dummy.m */; };
+		A2E772C7A8BBDD0A0105EE93D43D8CD2 /* WLLineAxis.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA92FAE4BD97D8AD1A4D29AE8079FD76 /* WLLineAxis.swift */; };
+		A324A0918EEBF4C2FEA9EC72DDD40BC3 /* WLLineColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F019A22596A4487056C23FB2D7E085 /* WLLineColor.swift */; };
+		A3E3F83AE6EBA7DA2E86C619EEA7ECCD /* WLPieSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03CB796C4352090F59930CD43D5C235 /* WLPieSlice.swift */; };
+		B77D3CFB6D46B0912225224F8D69D908 /* Pods-WLCharts_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 338D27C58B4F203EB71903E2F9E61DF8 /* Pods-WLCharts_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5D1613AF3CB06CD5375DDE87931F448 /* WLPieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CBB389F9E7087F0C2C846AA754B239 /* WLPieChart.swift */; };
+		CFDEC578836C2D77377CB27376DE47F4 /* WLLineLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A4BC09C9244722C864B413088ACBC40 /* WLLineLabels.swift */; };
+		D6E0502BF047B1CE3F6191F746317B88 /* WLLineChartProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B1B40BFAB8492E1E27473B3A816698 /* WLLineChartProtocols.swift */; };
+		D8B793CA420EA06D02082CCA35EB7E71 /* WLLineChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A5F7D47F8B496DC05559E26D05FEF2 /* WLLineChart.swift */; };
+		DD5F954AB328755AB5DFF4B2560982BA /* Pods-WLCharts_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F52C1DB24F22CD584AF395AEBDAAF008 /* Pods-WLCharts_Example-dummy.m */; };
+		E03AD3D85FDCF21D5EF93C97518A5060 /* WLLineAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C979148126EEA93CE6781AF0E9C7EB6 /* WLLineAlgorithm.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7D8CB95A7CB61D0BF10517E015F7A7DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FF8A8F95169302398CD90A681BE432C;
+			remoteInfo = "Pods-WLCharts_Example";
+		};
+		C0C57DD19C23FED741F8F61856ABEC70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDC7F96290F23F9A6D4E41EED02CC75D;
+			remoteInfo = WLCharts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		027A6B635B02D89A90C611276C3FABDF /* WLCircularChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLCircularChart.swift; sourceTree = "<group>"; };
+		04D9CFAE17EF2B39BC97595AB6F30B88 /* Pods-WLCharts_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLCharts_Example.release.xcconfig"; sourceTree = "<group>"; };
+		068E3055136D16D093F54C6DB5560B89 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		08368A33145C603CEAE950661451023F /* WLScatterChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLScatterChart.swift; sourceTree = "<group>"; };
+		0D24D4C4E79C8023A78C04A86CC70688 /* Pods-WLCharts_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WLCharts_Tests.modulemap"; sourceTree = "<group>"; };
+		0E27F8DAEF783FECB83424590D6113FA /* WLLineDots.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineDots.swift; sourceTree = "<group>"; };
+		0E5E35EDAA63F2C05B58C0E866A15261 /* Pods-WLCharts_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLCharts_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		0FC027CC070306C6FDF9DEDCB85BF37D /* Pods-WLCharts_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLCharts_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0FE49899E381F1473AC91935F028CF6D /* WLCharts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "WLCharts-dummy.m"; sourceTree = "<group>"; };
+		15C9DDBDEEFD71715F7AE97451B364D0 /* Pods-WLCharts_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLCharts_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		1B2A5E148E5E069E707A2F3C47DE86F1 /* WLCharts.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = WLCharts.modulemap; sourceTree = "<group>"; };
+		1BC679788109281C4292CB88538E04CE /* WLLineY.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineY.swift; sourceTree = "<group>"; };
+		2258ABC99FA399054231A95BB7CD5D6E /* WLRadarColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLRadarColor.swift; sourceTree = "<group>"; };
+		23A5F7D47F8B496DC05559E26D05FEF2 /* WLLineChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineChart.swift; sourceTree = "<group>"; };
+		267E492211A18FCFF140BFE99DF08E0C /* Pods_WLCharts_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLCharts_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		338D27C58B4F203EB71903E2F9E61DF8 /* Pods-WLCharts_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WLCharts_Example-umbrella.h"; sourceTree = "<group>"; };
+		3E50EA318F388244991523D441355696 /* Pods-WLCharts_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLCharts_Tests-resources.sh"; sourceTree = "<group>"; };
+		42F019A22596A4487056C23FB2D7E085 /* WLLineColor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineColor.swift; sourceTree = "<group>"; };
+		437848597E14DF098EE4B8522DB01765 /* WLCharts-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLCharts-umbrella.h"; sourceTree = "<group>"; };
+		44344C6F8CDDCC8BD2E350163FAFC6CB /* WLRadarValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLRadarValue.swift; sourceTree = "<group>"; };
+		466426F85F7AF8C3DD4005F8F5F76E8D /* WLLineX.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineX.swift; sourceTree = "<group>"; };
+		49293EF9D15817B8A623691A6FA02A68 /* Pods-WLCharts_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLCharts_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5532D3F798EB717E6C2CCB6F756B6589 /* WLLineDot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineDot.swift; sourceTree = "<group>"; };
+		59D24F5BD997D87DEF5E7E7E95733C75 /* WLLineAnimation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineAnimation.swift; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5B29BA4FB9EB97A64077B29A7AF209FD /* Pods_WLCharts_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WLCharts_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C979148126EEA93CE6781AF0E9C7EB6 /* WLLineAlgorithm.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineAlgorithm.swift; sourceTree = "<group>"; };
+		5FABF26E297551129809A2211112E6AB /* WLCharts.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = WLCharts.xcconfig; sourceTree = "<group>"; };
+		607D7F4A4C9DD502D4E4FC477F7C968B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62AE9C3FF69C55D349F0152A0B246CA7 /* WLScatterAxis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLScatterAxis.swift; sourceTree = "<group>"; };
+		63562B3A2400ABE943002615009F4E00 /* Pods-WLCharts_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLCharts_Tests-dummy.m"; sourceTree = "<group>"; };
+		63B1B40BFAB8492E1E27473B3A816698 /* WLLineChartProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineChartProtocols.swift; sourceTree = "<group>"; };
+		63CBB389F9E7087F0C2C846AA754B239 /* WLPieChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLPieChart.swift; sourceTree = "<group>"; };
+		6CF84E4EBEE0323D393346741F5A1EAE /* Pods-WLCharts_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLCharts_Example-resources.sh"; sourceTree = "<group>"; };
+		762DAFC5D17F2F958E139BA0730827B3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		80FEF9C3CC402AC23A50093B344E4216 /* WLCharts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WLCharts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8172D604CB0824935A9FA6482C76B913 /* WLScatterValue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLScatterValue.swift; sourceTree = "<group>"; };
+		81EB4B463B9A74EFFC3DAB91B5834DAF /* Pods-WLCharts_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-WLCharts_Example.modulemap"; sourceTree = "<group>"; };
+		8A4BC09C9244722C864B413088ACBC40 /* WLLineLabels.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineLabels.swift; sourceTree = "<group>"; };
+		8F4BD447237FF12237F75DF862704D06 /* WLCharts-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WLCharts-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DDA37D2597BF6336C4045B4E81BD9AD /* WLRadarChart.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLRadarChart.swift; sourceTree = "<group>"; };
+		AE24E9703E62A6FE00242519CD6092C8 /* Pods-WLCharts_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLCharts_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B6CC63DBA0AE99DF562C5E1EFDAEA13E /* Pods-WLCharts_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WLCharts_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C03CB796C4352090F59930CD43D5C235 /* WLPieSlice.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLPieSlice.swift; sourceTree = "<group>"; };
+		C117787AD0CD4FAF506AEC89E71D9CAD /* Pods-WLCharts_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WLCharts_Tests-umbrella.h"; sourceTree = "<group>"; };
+		D277BF3BE2EC20F538F153ED332B7A30 /* Pods-WLCharts_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WLCharts_Example-frameworks.sh"; sourceTree = "<group>"; };
+		D997A79DE360982D1F084DE7DD9D3198 /* Pods-WLCharts_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WLCharts_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DA92FAE4BD97D8AD1A4D29AE8079FD76 /* WLLineAxis.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineAxis.swift; sourceTree = "<group>"; };
+		E214DC9F4E96CAEEC1A28018F8009A2D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECE9D0C60B12BC1D362E47B93B5272DE /* Pods-WLCharts_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WLCharts_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		ED3CBE35BFFABD26495671F856FB39BF /* WLLineColorHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineColorHelper.swift; sourceTree = "<group>"; };
+		EE3CE137A802828C27CC054A6D2A51EA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2E8D7C7392894601973E1CA45EB77C2 /* WLScatterFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLScatterFont.swift; sourceTree = "<group>"; };
+		F3F4CEEE47063431D5C78A24403AA9E9 /* WLLineGrid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = WLLineGrid.swift; sourceTree = "<group>"; };
+		F52C1DB24F22CD584AF395AEBDAAF008 /* Pods-WLCharts_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WLCharts_Example-dummy.m"; sourceTree = "<group>"; };
+		F7EA1E82175098942DC69E4A064A0402 /* WLCharts.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = WLCharts.podspec; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22B39EA0D0BB14B44440E29794D09F5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0BD415C2678FC8594E11A68223C5207B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B52A5F63420D84E1E7D6BAE9DC9C854 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DEB8EE0AFF1F0EE123D3C528AA05F53 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBD48BAF118526CEB5331584D353D265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16F4660DC94E51D1B84B34CF71472CC5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D1F5CD598D5D574986CAEFFFB75CC5A /* RadarChart */ = {
+			isa = PBXGroup;
+			children = (
+				9DDA37D2597BF6336C4045B4E81BD9AD /* WLRadarChart.swift */,
+				84D5EFEB55EEE782A11E215F0DF9940C /* Structs */,
+			);
+			name = RadarChart;
+			path = WLCharts/Classes/RadarChart;
+			sourceTree = "<group>";
+		};
+		158A3F3656FBD1D8487BB4CAC3ED11E6 /* WLCharts */ = {
+			isa = PBXGroup;
+			children = (
+				0D1F5CD598D5D574986CAEFFFB75CC5A /* RadarChart */,
+				9E50D729BF73FDF930A601782B96082C /* ScatterChart */,
+				42C34329E18EC90A2B78498152EFEB11 /* CircleChart */,
+				AC2128EA35C2FD5090651C41B179BBBA /* LineChart */,
+				B6DEAE1A8C90C7B159BBE128C3B026ED /* PieChart */,
+				C9BFBE1B9D37DFC77CADA26EB32AF160 /* Pod */,
+				3E2EE86837327709F2CD24B7D015BFAA /* Support Files */,
+			);
+			name = WLCharts;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		2A69BB6C022069EF054B19D22252DFB7 /* Pods-WLCharts_Example */ = {
+			isa = PBXGroup;
+			children = (
+				EE3CE137A802828C27CC054A6D2A51EA /* Info.plist */,
+				81EB4B463B9A74EFFC3DAB91B5834DAF /* Pods-WLCharts_Example.modulemap */,
+				D997A79DE360982D1F084DE7DD9D3198 /* Pods-WLCharts_Example-acknowledgements.markdown */,
+				ECE9D0C60B12BC1D362E47B93B5272DE /* Pods-WLCharts_Example-acknowledgements.plist */,
+				F52C1DB24F22CD584AF395AEBDAAF008 /* Pods-WLCharts_Example-dummy.m */,
+				D277BF3BE2EC20F538F153ED332B7A30 /* Pods-WLCharts_Example-frameworks.sh */,
+				6CF84E4EBEE0323D393346741F5A1EAE /* Pods-WLCharts_Example-resources.sh */,
+				338D27C58B4F203EB71903E2F9E61DF8 /* Pods-WLCharts_Example-umbrella.h */,
+				B6CC63DBA0AE99DF562C5E1EFDAEA13E /* Pods-WLCharts_Example.debug.xcconfig */,
+				04D9CFAE17EF2B39BC97595AB6F30B88 /* Pods-WLCharts_Example.release.xcconfig */,
+			);
+			name = "Pods-WLCharts_Example";
+			path = "Target Support Files/Pods-WLCharts_Example";
+			sourceTree = "<group>";
+		};
+		3442FA55967D22B75B5F99CDF8D9D08E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A69BB6C022069EF054B19D22252DFB7 /* Pods-WLCharts_Example */,
+				66743A511C73D77A107687D04562FC2D /* Pods-WLCharts_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3E2EE86837327709F2CD24B7D015BFAA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E214DC9F4E96CAEEC1A28018F8009A2D /* Info.plist */,
+				1B2A5E148E5E069E707A2F3C47DE86F1 /* WLCharts.modulemap */,
+				5FABF26E297551129809A2211112E6AB /* WLCharts.xcconfig */,
+				0FE49899E381F1473AC91935F028CF6D /* WLCharts-dummy.m */,
+				8F4BD447237FF12237F75DF862704D06 /* WLCharts-prefix.pch */,
+				437848597E14DF098EE4B8522DB01765 /* WLCharts-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/WLCharts";
+			sourceTree = "<group>";
+		};
+		42C34329E18EC90A2B78498152EFEB11 /* CircleChart */ = {
+			isa = PBXGroup;
+			children = (
+				027A6B635B02D89A90C611276C3FABDF /* WLCircularChart.swift */,
+			);
+			name = CircleChart;
+			path = WLCharts/Classes/CircleChart;
+			sourceTree = "<group>";
+		};
+		5707CA180506328022734149A391BEF9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				5C979148126EEA93CE6781AF0E9C7EB6 /* WLLineAlgorithm.swift */,
+				ED3CBE35BFFABD26495671F856FB39BF /* WLLineColorHelper.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		66743A511C73D77A107687D04562FC2D /* Pods-WLCharts_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				607D7F4A4C9DD502D4E4FC477F7C968B /* Info.plist */,
+				0D24D4C4E79C8023A78C04A86CC70688 /* Pods-WLCharts_Tests.modulemap */,
+				0FC027CC070306C6FDF9DEDCB85BF37D /* Pods-WLCharts_Tests-acknowledgements.markdown */,
+				AE24E9703E62A6FE00242519CD6092C8 /* Pods-WLCharts_Tests-acknowledgements.plist */,
+				63562B3A2400ABE943002615009F4E00 /* Pods-WLCharts_Tests-dummy.m */,
+				15C9DDBDEEFD71715F7AE97451B364D0 /* Pods-WLCharts_Tests-frameworks.sh */,
+				3E50EA318F388244991523D441355696 /* Pods-WLCharts_Tests-resources.sh */,
+				C117787AD0CD4FAF506AEC89E71D9CAD /* Pods-WLCharts_Tests-umbrella.h */,
+				0E5E35EDAA63F2C05B58C0E866A15261 /* Pods-WLCharts_Tests.debug.xcconfig */,
+				49293EF9D15817B8A623691A6FA02A68 /* Pods-WLCharts_Tests.release.xcconfig */,
+			);
+			name = "Pods-WLCharts_Tests";
+			path = "Target Support Files/Pods-WLCharts_Tests";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				F374965BA6885ED50A3B4A868D01DD7F /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				A7C8571C576C7649B5945098CCCD9D2B /* Products */,
+				3442FA55967D22B75B5F99CDF8D9D08E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		84D5EFEB55EEE782A11E215F0DF9940C /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				2258ABC99FA399054231A95BB7CD5D6E /* WLRadarColor.swift */,
+				44344C6F8CDDCC8BD2E350163FAFC6CB /* WLRadarValue.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		9E50D729BF73FDF930A601782B96082C /* ScatterChart */ = {
+			isa = PBXGroup;
+			children = (
+				08368A33145C603CEAE950661451023F /* WLScatterChart.swift */,
+				FB2B34ADB53B37DDC2E6CE6573335538 /* Structs */,
+			);
+			name = ScatterChart;
+			path = WLCharts/Classes/ScatterChart;
+			sourceTree = "<group>";
+		};
+		A7C8571C576C7649B5945098CCCD9D2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B29BA4FB9EB97A64077B29A7AF209FD /* Pods_WLCharts_Example.framework */,
+				267E492211A18FCFF140BFE99DF08E0C /* Pods_WLCharts_Tests.framework */,
+				80FEF9C3CC402AC23A50093B344E4216 /* WLCharts.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC2128EA35C2FD5090651C41B179BBBA /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				23A5F7D47F8B496DC05559E26D05FEF2 /* WLLineChart.swift */,
+				63B1B40BFAB8492E1E27473B3A816698 /* WLLineChartProtocols.swift */,
+				DE490010A30095E33A0ACE2EA2BF9423 /* Parts */,
+				D72FA8DBC2BE7F801CF797125BAC4FB5 /* Structs */,
+				5707CA180506328022734149A391BEF9 /* Util */,
+			);
+			name = LineChart;
+			path = WLCharts/Classes/LineChart;
+			sourceTree = "<group>";
+		};
+		B6DEAE1A8C90C7B159BBE128C3B026ED /* PieChart */ = {
+			isa = PBXGroup;
+			children = (
+				63CBB389F9E7087F0C2C846AA754B239 /* WLPieChart.swift */,
+				D5224AFD463B9FD3E834E895F2F61347 /* Structs */,
+			);
+			name = PieChart;
+			path = WLCharts/Classes/PieChart;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9BFBE1B9D37DFC77CADA26EB32AF160 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				762DAFC5D17F2F958E139BA0730827B3 /* LICENSE */,
+				068E3055136D16D093F54C6DB5560B89 /* README.md */,
+				F7EA1E82175098942DC69E4A064A0402 /* WLCharts.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		D5224AFD463B9FD3E834E895F2F61347 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				C03CB796C4352090F59930CD43D5C235 /* WLPieSlice.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		D72FA8DBC2BE7F801CF797125BAC4FB5 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				59D24F5BD997D87DEF5E7E7E95733C75 /* WLLineAnimation.swift */,
+				DA92FAE4BD97D8AD1A4D29AE8079FD76 /* WLLineAxis.swift */,
+				42F019A22596A4487056C23FB2D7E085 /* WLLineColor.swift */,
+				0E27F8DAEF783FECB83424590D6113FA /* WLLineDots.swift */,
+				F3F4CEEE47063431D5C78A24403AA9E9 /* WLLineGrid.swift */,
+				8A4BC09C9244722C864B413088ACBC40 /* WLLineLabels.swift */,
+				466426F85F7AF8C3DD4005F8F5F76E8D /* WLLineX.swift */,
+				1BC679788109281C4292CB88538E04CE /* WLLineY.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		DE490010A30095E33A0ACE2EA2BF9423 /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				5532D3F798EB717E6C2CCB6F756B6589 /* WLLineDot.swift */,
+			);
+			path = Parts;
+			sourceTree = "<group>";
+		};
+		F374965BA6885ED50A3B4A868D01DD7F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				158A3F3656FBD1D8487BB4CAC3ED11E6 /* WLCharts */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		FB2B34ADB53B37DDC2E6CE6573335538 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				62AE9C3FF69C55D349F0152A0B246CA7 /* WLScatterAxis.swift */,
+				F2E8D7C7392894601973E1CA45EB77C2 /* WLScatterFont.swift */,
+				8172D604CB0824935A9FA6482C76B913 /* WLScatterValue.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		055CB5AA3ACB98DB81D3ABC9FB327B1A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				262413C9B9E41B5E6203FB88C102251F /* WLCharts-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34E8046B71F565E8F3BFA208F3AAF921 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B77D3CFB6D46B0912225224F8D69D908 /* Pods-WLCharts_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6E21CE5082DBCBD0000E297E47E659 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6745062F0746ABEB24ECFA96AD245FEE /* Pods-WLCharts_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06AA5153B40D0B38EDC8A884F6BDF2FE /* Pods-WLCharts_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AC2D11D3F965C287B2298DE2CAD1215 /* Build configuration list for PBXNativeTarget "Pods-WLCharts_Tests" */;
+			buildPhases = (
+				4F4D594A5C5C34FB58283D244D6D12FA /* Sources */,
+				22B39EA0D0BB14B44440E29794D09F5A /* Frameworks */,
+				AD6E21CE5082DBCBD0000E297E47E659 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50514CA5D68E663A10268767074019A2 /* PBXTargetDependency */,
+			);
+			name = "Pods-WLCharts_Tests";
+			productName = "Pods-WLCharts_Tests";
+			productReference = 267E492211A18FCFF140BFE99DF08E0C /* Pods_WLCharts_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5FF8A8F95169302398CD90A681BE432C /* Pods-WLCharts_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF8E9AB855DF2791035DBD60CDFFDD88 /* Build configuration list for PBXNativeTarget "Pods-WLCharts_Example" */;
+			buildPhases = (
+				35A1CF8FCB25F795AE0BBA08D82FCA67 /* Sources */,
+				EBD48BAF118526CEB5331584D353D265 /* Frameworks */,
+				34E8046B71F565E8F3BFA208F3AAF921 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27E40A400EEBCC7E9942B9644242D6D7 /* PBXTargetDependency */,
+			);
+			name = "Pods-WLCharts_Example";
+			productName = "Pods-WLCharts_Example";
+			productReference = 5B29BA4FB9EB97A64077B29A7AF209FD /* Pods_WLCharts_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DDC7F96290F23F9A6D4E41EED02CC75D /* WLCharts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D502216A128CE873781FAC74D3DCF9C /* Build configuration list for PBXNativeTarget "WLCharts" */;
+			buildPhases = (
+				FF8327BFF8DE39DD86C01A821DFEB99C /* Sources */,
+				6B52A5F63420D84E1E7D6BAE9DC9C854 /* Frameworks */,
+				055CB5AA3ACB98DB81D3ABC9FB327B1A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WLCharts;
+			productName = WLCharts;
+			productReference = 80FEF9C3CC402AC23A50093B344E4216 /* WLCharts.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = A7C8571C576C7649B5945098CCCD9D2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FF8A8F95169302398CD90A681BE432C /* Pods-WLCharts_Example */,
+				06AA5153B40D0B38EDC8A884F6BDF2FE /* Pods-WLCharts_Tests */,
+				DDC7F96290F23F9A6D4E41EED02CC75D /* WLCharts */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		35A1CF8FCB25F795AE0BBA08D82FCA67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD5F954AB328755AB5DFF4B2560982BA /* Pods-WLCharts_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F4D594A5C5C34FB58283D244D6D12FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A213DB7FF06678572FD08E12175F3E7 /* Pods-WLCharts_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF8327BFF8DE39DD86C01A821DFEB99C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8872C8B1569796C9365B78D08CD37E29 /* WLCharts-dummy.m in Sources */,
+				6AC046D16E5EC33076CBF33A0FC119AC /* WLCircularChart.swift in Sources */,
+				E03AD3D85FDCF21D5EF93C97518A5060 /* WLLineAlgorithm.swift in Sources */,
+				425ED11A7144B8A495B80372A60E0600 /* WLLineAnimation.swift in Sources */,
+				A2E772C7A8BBDD0A0105EE93D43D8CD2 /* WLLineAxis.swift in Sources */,
+				D8B793CA420EA06D02082CCA35EB7E71 /* WLLineChart.swift in Sources */,
+				D6E0502BF047B1CE3F6191F746317B88 /* WLLineChartProtocols.swift in Sources */,
+				A324A0918EEBF4C2FEA9EC72DDD40BC3 /* WLLineColor.swift in Sources */,
+				5F7422380D6E520F0641C3BE44B24009 /* WLLineColorHelper.swift in Sources */,
+				0B85ACC4903CBAD6A0E962317045E258 /* WLLineDot.swift in Sources */,
+				2BF28C39CB58033B393BC80B7C0EA9F5 /* WLLineDots.swift in Sources */,
+				37DAC036A7F275F87A7149DC1FB0F490 /* WLLineGrid.swift in Sources */,
+				CFDEC578836C2D77377CB27376DE47F4 /* WLLineLabels.swift in Sources */,
+				191E16D25B8D591523A44FAEC363945F /* WLLineX.swift in Sources */,
+				86BAA3A2415E1CBEEE13B3616B372405 /* WLLineY.swift in Sources */,
+				C5D1613AF3CB06CD5375DDE87931F448 /* WLPieChart.swift in Sources */,
+				A3E3F83AE6EBA7DA2E86C619EEA7ECCD /* WLPieSlice.swift in Sources */,
+				10D8C3FC83EB1F76D6A37460D7E93C10 /* WLRadarChart.swift in Sources */,
+				74E18EE92C55FECDF1076495985BF0B4 /* WLRadarColor.swift in Sources */,
+				17EE9A48EE8608B1B6A33D82D83693F3 /* WLRadarValue.swift in Sources */,
+				30F45AA119AB8CFAF0559C3C7203ABEC /* WLScatterAxis.swift in Sources */,
+				6886A00D4D88E1855AB927A92DC1D38B /* WLScatterChart.swift in Sources */,
+				34A90F864F468A0D7A3AD39B893899C0 /* WLScatterFont.swift in Sources */,
+				048BC06F82B046F41162B7AF9EA634C1 /* WLScatterValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27E40A400EEBCC7E9942B9644242D6D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WLCharts;
+			target = DDC7F96290F23F9A6D4E41EED02CC75D /* WLCharts */;
+			targetProxy = C0C57DD19C23FED741F8F61856ABEC70 /* PBXContainerItemProxy */;
+		};
+		50514CA5D68E663A10268767074019A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-WLCharts_Example";
+			target = 5FF8A8F95169302398CD90A681BE432C /* Pods-WLCharts_Example */;
+			targetProxy = 7D8CB95A7CB61D0BF10517E015F7A7DA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		245F558079DBCF0361A5092E4B835D21 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6CC63DBA0AE99DF562C5E1EFDAEA13E /* Pods-WLCharts_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WLCharts_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WLCharts_Example/Pods-WLCharts_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		332E752137F300CBD0034417C478FFEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04D9CFAE17EF2B39BC97595AB6F30B88 /* Pods-WLCharts_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WLCharts_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WLCharts_Example/Pods-WLCharts_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7C27A4D48EB7A336F1F49E5D2759ED4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FABF26E297551129809A2211112E6AB /* WLCharts.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WLCharts/WLCharts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WLCharts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WLCharts/WLCharts.modulemap";
+				PRODUCT_MODULE_NAME = WLCharts;
+				PRODUCT_NAME = WLCharts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C5B51BF76D4374B2D86E83FCE8960B08 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E5E35EDAA63F2C05B58C0E866A15261 /* Pods-WLCharts_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WLCharts_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WLCharts_Tests/Pods-WLCharts_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E7EC7E1F97A4078743AACF57B19C5FA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FABF26E297551129809A2211112E6AB /* WLCharts.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/WLCharts/WLCharts-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/WLCharts/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/WLCharts/WLCharts.modulemap";
+				PRODUCT_MODULE_NAME = WLCharts;
+				PRODUCT_NAME = WLCharts;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F4F01E79F28A25A6E271D47B1FC18EEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49293EF9D15817B8A623691A6FA02A68 /* Pods-WLCharts_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-WLCharts_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WLCharts_Tests/Pods-WLCharts_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D502216A128CE873781FAC74D3DCF9C /* Build configuration list for PBXNativeTarget "WLCharts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7C27A4D48EB7A336F1F49E5D2759ED4D /* Debug */,
+				E7EC7E1F97A4078743AACF57B19C5FA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
+				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AC2D11D3F965C287B2298DE2CAD1215 /* Build configuration list for PBXNativeTarget "Pods-WLCharts_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5B51BF76D4374B2D86E83FCE8960B08 /* Debug */,
+				F4F01E79F28A25A6E271D47B1FC18EEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF8E9AB855DF2791035DBD60CDFFDD88 /* Build configuration list for PBXNativeTarget "Pods-WLCharts_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				245F558079DBCF0361A5092E4B835D21 /* Debug */,
+				332E752137F300CBD0034417C478FFEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

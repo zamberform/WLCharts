@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  WLCharts
 //
-//  Created by brightzamber on 03/06/2019.
-//  Copyright (c) 2019 brightzamber. All rights reserved.
+//  Created by PdOuJun on 03/05/2019.
+//  Copyright (c) 2019 PdOuJun. All rights reserved.
 //
 
 import UIKit

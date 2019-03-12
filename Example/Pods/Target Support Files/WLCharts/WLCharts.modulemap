@@ -1,0 +1,6 @@
+framework module WLCharts {
+  umbrella header "WLCharts-umbrella.h"
+
+  export *
+  module * { export * }
+}

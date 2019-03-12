@@ -1,42 +1,25 @@
-#
-# Be sure to run `pod lib lint WLCharts.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'WLCharts'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of WLCharts.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.summary          = 'A Collection of Charts'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+The Collection of Charts,
+I created LineChart, PieChart, CircleChart, RadarChart, ScatterChart.
                        DESC
 
   s.homepage         = 'https://github.com/brightzamber/WLCharts'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://github.com/brightzamber/WLCharts/screen/WLCharts.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'brightzamber' => 'brightzamber@gmail.com' }
   s.source           = { :git => 'https://github.com/brightzamber/WLCharts.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'WLCharts/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'WLCharts' => ['WLCharts/Assets/*.png']
-  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
+  s.swift_version = '4.0'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

@@ -1,0 +1,16 @@
+PODS:
+  - WLCharts (0.1.0)
+
+DEPENDENCIES:
+  - WLCharts (from `../`)
+
+EXTERNAL SOURCES:
+  WLCharts:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WLCharts: ccb864cbd67310a9b5835f059436f23dc5c20b09
+
+PODFILE CHECKSUM: 189bb37a9697c97903e8201c93a9ec511eb2e557
+
+COCOAPODS: 1.5.3
